@@ -8,7 +8,7 @@ import bulmaLogo from "../images/bulma-logo.png";
 import Navbar from "./navbar";
 
 const Header = ({ siteTitle }) => (
-  <section className="hero gradientBg is-fullheight-with-navbar">
+  <section className="hero header is-fullheight-with-navbar">
     <Navbar />
     <div className="hero-body">
       <div className="container center">
