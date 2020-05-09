@@ -1,9 +1,10 @@
 {
-  "name": "gatsby-bulma-quickstart",
-  "description": "A Project to bootstrap your next Gatsby + Bulma site.",
+  "name": "my-porfolio",
+  "description": "My personal website",
   "version": "1.10.2",
-  "author": "Aman Mittal <amandeepmittal@live.com>",
+  "author": "Fabian Rubio <fabianrubio.ru@gmail.com>",
   "dependencies": {
+    "@react-hook/window-scroll": "^1.1.4",
     "bulma": "^0.8.2",
     "gatsby": "^2.20.18",
     "gatsby-image": "^2.3.2",

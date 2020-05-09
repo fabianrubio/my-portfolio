@@ -1272,6 +1272,18 @@
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
+"@react-hook/throttle@^2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@react-hook/throttle/-/throttle-2.1.2.tgz#ff2b342655896dd210246f382e156cdb2ab599cf"
+  integrity sha512-AmZX4wUXHJe/jN33elneFDt5zJN6f4uB9ruTDrBaUcA+Yroh+hjqBlL4/N3IL2sf6oyDRmL2eMQUgJoJN+akIg==
+
+"@react-hook/window-scroll@^1.1.4":
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@react-hook/window-scroll/-/window-scroll-1.1.4.tgz#1604a0cba2dd5d27b21c9faa370920c32499bd09"
+  integrity sha512-TGoJD1OjJ3WpNwfGndc5aMBsepBBTQRa3pnyOJXLLmAZW9YCyapKa+DpT5U70RqbCXgRXhUB4begqSoOBm7zeA==
+  dependencies:
+    "@react-hook/throttle" "^2.1.2"
+
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
