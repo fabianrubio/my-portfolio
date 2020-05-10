@@ -13,7 +13,15 @@ import Emoji from "./emoji";
 
 const Midsection = () => (
   <div>
-    <section className="section">
+    <section class="hero is-fullheight is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">Primary title</h1>
+          <h2 class="subtitle">Primary subtitle</h2>
+        </div>
+      </div>
+    </section>
+    {/* <section className="section">
       <div className="container">
         <div className="columns is-multiline">
           <div className="column is-one-third">
@@ -60,7 +68,7 @@ const Midsection = () => (
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
   </div>
 );
 

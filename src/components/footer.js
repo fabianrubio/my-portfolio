@@ -21,7 +21,9 @@ const Footer = () => (
     `}
     render={(data) => (
       <footer className="footer center has-background-light">
-        <div className="content has-text-centered"></div>
+        <div className="content has-text-centered">
+          © {new Date().getFullYear()}, Designed & Built Fabian
+        </div>
       </footer>
     )}
   />
