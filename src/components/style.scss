@@ -4,6 +4,169 @@
 // Importing Bulma from node_modules
 @import "~bulma/bulma.sass";
 
+/* -------------------------------- 
+Typography
+-------------------------------- */
+
+:root {
+  --font-primary: Inter;
+  --font-secondary: sans-serif;
+
+  /* set base values */
+  --text-base-size: 1rem;
+  --text-scale-ratio: 1.3;
+
+  /* type scale */
+  --text-xs: calc(1rem / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+  --text-sm: calc(1rem / var(--text-scale-ratio));
+  --text-md: calc(1rem * var(--text-scale-ratio));
+  --text-lg: calc(1rem * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xl: calc(
+    1rem * var(--text-scale-ratio) * var(--text-scale-ratio) *
+      var(--text-scale-ratio)
+  );
+  --text-xxl: calc(
+    1rem * var(--text-scale-ratio) * var(--text-scale-ratio) *
+      var(--text-scale-ratio) * var(--text-scale-ratio)
+  );
+  --text-xxxl: calc(
+    1rem * var(--text-scale-ratio) * var(--text-scale-ratio) *
+      var(--text-scale-ratio) * var(--text-scale-ratio) *
+      var(--text-scale-ratio)
+  );
+
+  /* line-height */
+  --heading-line-height: 1.375;
+  --body-line-height: 1.375;
+}
+
+// @include breakpoint(md) {
+//   :root {
+//     --text-base-size: 1.25rem;
+//     --text-scale-ratio: 1.25;
+//   }
+// }
+
+body,
+button,
+input,
+select,
+textarea {
+  font-size: var(--text-base-size);
+  font-family: var(--font-primary);
+  color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+form legend {
+  color: var(--color-text-heading);
+  margin-bottom: var(--space-xxs);
+  line-height: var(--heading-line-height);
+}
+
+/* text size */
+.text--xxxl {
+  font-size: var(--text-xxxl);
+}
+
+h1,
+.text--xxl {
+  font-size: var(--text-xxl);
+}
+
+h2,
+.text--xl {
+  font-size: var(--text-xl);
+}
+
+h3,
+.text--lg {
+  font-size: var(--text-lg);
+}
+
+h4,
+.text--md {
+  font-size: var(--text-md);
+}
+
+.text--sm,
+small {
+  font-size: var(--text-sm);
+}
+
+.text--xs {
+  font-size: var(--text-xs);
+}
+
+p {
+  line-height: var(--body-line-height);
+}
+
+a {
+  color: var(--color-link);
+
+  &:visited {
+    color: var(--color-link-visited);
+  }
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+.text-container {
+  h2,
+  h3,
+  h4 {
+    margin-top: var(--space-sm);
+  }
+
+  ul,
+  ol,
+  p {
+    margin-bottom: var(--space-md);
+  }
+
+  ul,
+  ol {
+    list-style-position: outside;
+    padding-left: 24px;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  ul li,
+  ol li {
+    line-height: var(--body-line-height);
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  u {
+    text-decoration: underline;
+  }
+}
+
+/* utility classes */
+.truncate {
+  // truncate text if it exceeds parent
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .header {
   height: 100vh;
 }
@@ -18,6 +181,7 @@
   padding: 0.25rem 0;
   margin-right: 2.5rem;
   cursor: pointer;
+  transition: 0.7s;
 }
 
 a.navbar-item:focus,
@@ -29,6 +193,7 @@ a.navbar-item.is-active,
 .navbar-link:hover,
 .navbar-link.is-active {
   background-color: #fff;
+  transition: 0.7s;
 }
 
 .navbar-menu a.navbar-item::after {
@@ -75,4 +240,22 @@ a.navbar-item:hover::after {
   a:hover {
     color: $primary;
   }
+}
+
+.button {
+  border-width: 2px;
+}
+
+.hero-body {
+  padding: 5rem 1.5rem;
+}
+
+.button.is-primary.is-outlined:hover,
+.button.is-primary.is-outlined.is-hovered,
+.button.is-primary.is-outlined:focus,
+.button.is-primary.is-outlined.is-focused {
+  box-shadow: 0 0.2rem 0.5rem rgba(103, 110, 144, 0.4),
+    0 0 0 0.1rem rgba(103, 110, 144, 0.05);
+  opacity: 0.8;
+  transition: 0.7s;
 }

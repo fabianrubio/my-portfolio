@@ -16,41 +16,43 @@ function Navbar() {
         role="navigation"
         aria-label="main navigation"
       >
-        <div class="navbar-brand">
-          <a class="navbar-item" href="#home">
-            <img
-              src="https://bulma.io/images/bulma-logo.png"
-              width="112"
-              height="28"
-            />
-          </a>
+        <div className="container">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="#home">
+              <img
+                src="https://bulma.io/images/bulma-logo.png"
+                width="112"
+                height="28"
+              />
+            </a>
 
-          <a
-            role="button"
-            className={`navbar-burger burger ${isActive && "is-active"}`}
-            aria-label="menu"
-            aria-expanded="false"
-            id="burger"
-            onClick={() => {
-              setIsActive(!isActive);
-            }}
+            <a
+              role="button"
+              className={`navbar-burger burger ${isActive && "is-active"}`}
+              aria-label="menu"
+              aria-expanded="false"
+              id="burger"
+              onClick={() => {
+                setIsActive(!isActive);
+              }}
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <div
+            id="navbarBasicExample"
+            className={`navbar-menu ${isActive ? "is-active" : ""}`}
           >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-
-        <div
-          id="navbarBasicExample"
-          className={`navbar-menu ${isActive ? "is-active" : ""}`}
-        >
-          <div class="navbar-end">
-            <a class="navbar-item">Home</a>
-            <a class="navbar-item">About</a>
-            <a class="navbar-item">Skills</a>
-            <a class="navbar-item">Experience</a>
-            <a class="navbar-item">Contact</a>
+            <div class="navbar-end">
+              <a class="navbar-item">Home</a>
+              <a class="navbar-item">About</a>
+              <a class="navbar-item">Skills</a>
+              <a class="navbar-item">Experience</a>
+              <a class="navbar-item">Contact</a>
+            </div>
           </div>
         </div>
       </nav>
