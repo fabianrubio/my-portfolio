@@ -38,6 +38,10 @@ Typography
   /* line-height */
   --heading-line-height: 1.375;
   --body-line-height: 1.375;
+
+  /* main colors */
+  --color-primary: $primary;
+  --color-secondary: $primary;
 }
 
 // @include breakpoint(md) {
@@ -61,7 +65,17 @@ h1,
 h2,
 h3,
 h4,
-form legend {
+form legend,
+p {
+  color: var(--color-text-heading);
+  margin-bottom: var(--space-xxs);
+  line-height: var(--heading-line-height);
+}
+
+.h1,
+.h2,
+.h3,
+.h4 {
   color: var(--color-text-heading);
   margin-bottom: var(--space-xxs);
   line-height: var(--heading-line-height);
@@ -258,4 +272,76 @@ a.navbar-item:hover::after {
     0 0 0 0.1rem rgba(103, 110, 144, 0.05);
   opacity: 0.8;
   transition: 0.7s;
+}
+
+.is-secondary {
+  background-color: $secondary;
+  color: #fff;
+}
+
+.is-primary {
+  background-color: $primary;
+  color: #fff;
+}
+
+.box {
+  // background-color: white;
+  // border-radius: 15px;
+  // box-shadow: 0 5px 5px 0 rgba(123, 149, 160, 0.5), 0 0 0 1px #e6ecf8;
+  // color: #141c3a;
+  // display: block;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.title {
+  color: #fff;
+}
+
+.title:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #fff;
+}
+
+.avatar {
+  margin: 2rem 0;
+  width: 210px;
+}
+
+hr {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.5rem;
+}
+
+hr.divider {
+  max-width: 3.25rem;
+  border-width: 0.2rem;
+  border-color: $primary;
+  margin: auto;
+}
+
+hr.light {
+  border-color: #fff;
+}
+
+.section.is-medium {
+  padding-top: 3rem;
+}
+
+.section.about {
+  margin-top: -10rem;
+  padding-bottom: 7rem;
+}
+
+@media (max-width: 768px) {
+  .section.about {
+    margin-top: -5rem;
+    padding-bottom: 7rem;
+  }
 }
