@@ -10,6 +10,7 @@ import {
 
 import "./style.scss";
 import AvatarMe from "../images/my-avatar.png";
+import Skills from "./skills";
 
 const Midsection = () => (
   <div>
@@ -18,7 +19,7 @@ const Midsection = () => (
         <div className="columns is-centered">
           <div className="column column is-three-fifths">
             <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">
-              About
+              About me
             </h1>
             <hr className="divider light" />
           </div>
@@ -26,7 +27,7 @@ const Midsection = () => (
       </div>
     </section>
 
-    <section class="section about is-medium">
+    <section class="section content is-medium">
       <div class="container is-narrow">
         <div className="box">
           <div className="content">
@@ -67,6 +68,8 @@ const Midsection = () => (
         </div>
       </div>
     </section>
+
+    <Skills />
 
     {/* <section class="hero is-primary has-text-centered">
       <div class="hero-body">
