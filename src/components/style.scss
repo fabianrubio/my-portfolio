@@ -334,14 +334,25 @@ hr.light {
   padding-top: 3rem;
 }
 
-.section.about {
+.section.content {
   margin-top: -10rem;
   padding-bottom: 7rem;
 }
 
 @media (max-width: 768px) {
-  .section.about {
+  .section.content {
     margin-top: -5rem;
     padding-bottom: 7rem;
   }
+}
+
+.content figure:not(:last-child) {
+  margin-bottom: 0.5em;
+}
+
+.media {
+  align-items: center;
+}
+
+.column.is-full-mobile {
 }
