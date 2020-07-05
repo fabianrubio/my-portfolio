@@ -5,6 +5,7 @@
   "author": "Fabian Rubio <fabianrubio.ru@gmail.com>",
   "dependencies": {
     "@react-hook/window-scroll": "^1.1.4",
+    "axios": "^0.19.2",
     "bulma": "^0.8.2",
     "gatsby": "^2.20.18",
     "gatsby-image": "^2.3.2",
@@ -21,7 +22,9 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-helmet": "^5.2.1",
+    "react-hook-form": "^5.7.2",
     "react-icons": "^3.9.0",
+    "react-scroll": "^1.7.16",
     "typeface-inter": "^3.12.0"
   },
   "keywords": [
