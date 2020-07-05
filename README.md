@@ -37,7 +37,7 @@ Otherwise you can directly download it clicking on download button on this repos
 
 ### 2. Running in development mode
 
-Go inside `gatsby-bulma-quickstart/` directory and run the following command:
+Go inside `my-portfolio/` directory and run the following command:
 
 `gatsby develop`
 
@@ -46,7 +46,7 @@ Go inside `gatsby-bulma-quickstart/` directory and run the following command:
 The site is now running at
 [http://localhost:8000](http://localhost:8000).
 
-Open `gatsby-bulma-quickstart/` directory in your code editor of choice and edit it. Save your changes and the browser will update them in real time!
+Open `my-portfolio/` directory in your code editor of choice and edit it. Save your changes and the browser will update them in real time!
 
 ## Contact me
 
