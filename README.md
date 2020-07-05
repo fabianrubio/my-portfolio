@@ -50,6 +50,6 @@ Open `my-portfolio/` directory in your code editor of choice and edit it. Save y
 
 ## Contact me
 
-If you find any possible improvement or suggestion related to code or UI/UX please contribute by submitting a PR.
+If you find any possible improvement or suggestion related to code or UI/UX please contribute by submitting an [email](mailto: fabianrubio.ru@gmail.com).
 
 **Happy Coding!** 🎉
