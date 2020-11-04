@@ -1,48 +1,66 @@
-import React from "react";
+import React from 'react';
 
 const Experience = () => (
   <>
-    <section className="hero is-fullheight is-fullheight-with-navbar">
-      <div id="experience">
-        <div className="hero-head">
-          <div className="container">
-            <div className="has-text-centered">
+    <section className='hero is-fullheight is-fullheight-with-navbar'>
+      <div id='experience'>
+        <div className='hero-head'>
+          <div className='container'>
+            <div className='has-text-centered'>
               <h2>Experience</h2>
-              <hr className="divider" />
+              <hr className='divider' />
             </div>
           </div>
         </div>
 
-        <div className="hero-body">
-          <div className="container experience">
-            <div className="container is-narrow">
-              <div className="box">
-                <div className="content">
-                  <div className="columns">
-                    <div className="column">
+        <div className='hero-body'>
+          <div className='container experience'>
+            <div className='container is-narrow'>
+              <div className='box'>
+                <div className='content'>
+                  <div className='columns'>
+                    <div className='column'>
                       <p>
-                        <strong className="has-text-primary">Lumbrera</strong>
+                        <strong className='has-text-primary'>Lumbrera</strong>
                       </p>
                       <p>Jul 2019 - Jul 2020</p>
                       <ul>
                         <li>
-                          Write modern, performant, maintainable code for a
+                          Wrote modern, performant, maintainable code for a
                           diverse array of client and internal projects.
                         </li>
                         <li>
-                          Work with a variety of different languages,
+                          Developed a project with reusable components that
+                          could minimize the time needed to complete projects in
+                          the future.
+                        </li>
+                        <li>
+                          Worked daily in real-world applications and projects
+                          producing several mobile-friendly applications.
+                        </li>
+                        <li>
+                          Worked with a variety of different languages,
                           frameworks, platforms, and content management systems
                           such as JavaScript, TypeScript, React and Vue.
                         </li>
                         <li>
-                          Communicate with multi-disciplinary teams of
+                          Communicated with multi-disciplinary teams of
                           developers and ux designers on a daily basis.
                         </li>
+                        <li>
+                          Implemented all UI of creditoasciende.com (Website of
+                          loans for Mexican SMEs), ensuring usability and user
+                          experience.
+                        </li>
                       </ul>
-                    </div>
-                    <div className="column">
                       <p>
-                        <strong className="has-text-primary">
+                        Stack Technologies: React, Vue, React Bootstrap,
+                        BootstrapVue, CSS/SASS.
+                      </p>
+                    </div>
+                    <div className='column'>
+                      <p>
+                        <strong className='has-text-primary'>
                           Expertos en Sistemas S. C.
                         </strong>
                       </p>
@@ -64,6 +82,7 @@ const Experience = () => (
                           developers.
                         </li>
                       </ul>
+                      <p>Stack Technologies: Angular 6, Bootstrap, CSS.</p>
                     </div>
                   </div>
                 </div>
