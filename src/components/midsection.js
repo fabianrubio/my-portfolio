@@ -1,45 +1,48 @@
-import React from "react";
-import AvatarMe from "../images/my-avatar.png";
-import Skills from "./skills";
-import Experience from "./experience";
+import React from 'react';
+import AvatarMe from '../images/my-avatar.png';
+import Skills from './skills';
+import Experience from './experience';
 
 const Midsection = () => (
   <>
     <section
-      id="about"
-      className="hero is-primary is-fullheight is-fullheight-with-navbar"
+      id='about'
+      className='hero is-primary is-fullheight is-fullheight-with-navbar'
     >
-      <div className="hero-head">
-        <div className="container">
-          <div className="has-text-centered">
-            <h2 className="has-text-white">About me</h2>
-            <hr className="divider light" />
+      <div className='hero-head'>
+        <div className='container'>
+          <div className='has-text-centered'>
+            <h2 className='has-text-white'>About me</h2>
+            <hr className='divider light' />
           </div>
         </div>
       </div>
 
-      <div className="hero-body">
-        <div className="container center">
-          <div className="columns">
-            <div className="column">
-              <div className="container is-narrow">
-                <div className="box">
-                  <div className="content">
-                    <div className="columns is-centered">
-                      <div className="column is-one-quarter">
+      <div className='hero-body'>
+        <div className='container center'>
+          <div className='columns'>
+            <div className='column'>
+              <div className='container is-narrow'>
+                <div className='box'>
+                  <div className='content'>
+                    <div className='columns is-centered'>
+                      <div className='column is-one-quarter'>
                         <figure>
-                          <img className="avatar" src={AvatarMe} alt="" />
+                          <img className='avatar' src={AvatarMe} alt='' />
                         </figure>
                       </div>
 
-                      <div className="column">
-                        <article className="media">
-                          <div className="media-content">
+                      <div className='column'>
+                        <article className='media'>
+                          <div className='media-content'>
                             <p>
                               I'm a passionate developer with almost 2 years of
-                              experience building exceptional, high-quality
-                              websites and applications, who loves to improve
-                              his skills every day.
+                              experience building awesome, high-quality websites
+                              and applications, who is curious about new digital
+                              technologies and loves to improve his skills every
+                              day. I have a strong passion for working with
+                              companies looking to focus on purpose-driven work
+                              to better society or day-to-day challenges.
                             </p>
 
                             <blockquote>

@@ -1,15 +1,17 @@
 // Importing variables
-@import "./variables.scss";
+@import './variables.scss';
 
 // Importing Bulma from node_modules
-@import "~bulma/bulma.sass";
+@import '~bulma/bulma.sass';
 
 /* -------------------------------- 
 Typography
 -------------------------------- */
 
 :root {
-  --font-primary: Inter;
+  --font-primary: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
   --font-secondary: sans-serif;
 
   /* set base values */
@@ -206,7 +208,7 @@ a.navbar-item.is-active,
 }
 
 .navbar-menu a.navbar-item::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   right: 0;

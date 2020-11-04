@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
-import useScrollPosition from "@react-hook/window-scroll";
-import { Link, animateScroll as scroll } from "react-scroll";
-import brand from "../images/fr-brand.svg";
+import React, { useEffect, useRef, useState } from 'react';
+import useScrollPosition from '@react-hook/window-scroll';
+import { Link, animateScroll as scroll } from 'react-scroll';
+import brand from '../images/fr-brand.svg';
 
 function Navbar() {
   const scrollY = useScrollPosition(60 /*frames per second*/);
@@ -21,49 +21,49 @@ function Navbar() {
   };
 
   useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   });
 
   return (
-    <div className="hero-head">
+    <div className='hero-head'>
       <nav
         ref={myRef}
-        className={`navbar is-fixed-top ${scrollY > 0 && "scrolled"}`}
-        role="navigation"
-        aria-label="main navigation"
+        className={`navbar is-fixed-top ${scrollY > 0 && 'scrolled'}`}
+        role='navigation'
+        aria-label='main navigation'
       >
-        <div className="container">
-          <div className="navbar-brand">
-            <a className="navbar-item" href="#">
-              <img src={brand} onClick={scrollToTop} alt="brand" />
+        <div className='container'>
+          <div className='navbar-brand'>
+            <a className='navbar-item' href='#'>
+              <img src={brand} onClick={scrollToTop} alt='brand' />
             </a>
 
             <button
               className={`button is-white navbar-burger burger ${isActive &&
-                "is-active"}`}
-              aria-label="menu"
-              aria-expanded="false"
-              id="burger"
+                'is-active'}`}
+              aria-label='menu'
+              aria-expanded='false'
+              id='burger'
               onClick={() => {
                 setIsActive(!isActive);
               }}
             >
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
+              <span aria-hidden='true'></span>
+              <span aria-hidden='true'></span>
+              <span aria-hidden='true'></span>
             </button>
           </div>
 
           <div
-            id="navbarBasicExample"
-            className={`navbar-menu ${isActive ? "is-active" : ""}`}
+            id='navbarBasicExample'
+            className={`navbar-menu ${isActive ? 'is-active' : ''}`}
           >
-            <div className="navbar-end">
+            <div className='navbar-end'>
               <Link
-                activeClass="is-active"
-                className="navbar-item"
-                to="home"
+                activeClass='is-active'
+                className='navbar-item'
+                to='home'
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -75,9 +75,9 @@ function Navbar() {
                 Home
               </Link>
               <Link
-                activeClass="is-active"
-                className="navbar-item"
-                to="about"
+                activeClass='is-active'
+                className='navbar-item'
+                to='about'
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -89,9 +89,9 @@ function Navbar() {
                 About
               </Link>
               <Link
-                activeClass="is-active"
-                className="navbar-item"
-                to="skills"
+                activeClass='is-active'
+                className='navbar-item'
+                to='skills'
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -103,9 +103,9 @@ function Navbar() {
                 Skills
               </Link>
               <Link
-                activeClass="is-active"
-                className="navbar-item"
-                to="experience"
+                activeClass='is-active'
+                className='navbar-item'
+                to='experience'
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -117,9 +117,9 @@ function Navbar() {
                 Experience
               </Link>
               <Link
-                activeClass="is-active"
-                className="navbar-item"
-                to="contact"
+                activeClass='is-active'
+                className='navbar-item'
+                to='contact'
                 spy={true}
                 smooth={true}
                 offset={-70}
