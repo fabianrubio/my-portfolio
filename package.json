@@ -45,8 +45,4 @@
   "devDependencies": {
     "prettier": "^1.14.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/amandeepmittal/gatsby-bulma-quickstart"
-  }
 }
